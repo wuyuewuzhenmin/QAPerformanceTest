@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户反馈平台</title>
+<!-- Bootstrap core CSS -->
+  <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://os4ty6tab.qnssl.com/web/static/cblued/cblued-10aa565b.css" rel="stylesheet" />
+  <link href="https://os4ty6tab.qnssl.com/web/static/cblued/cblued-9387cdbc.css" rel="stylesheet" />
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+     <script type="text/javascript">
+    function checkform (form)
+    {
+        var user_search = form.search1.value.trim();
+
+        if (!user_search) {
+            console.log("测试的");
+            return false;
+         } else {
+             return true;
+         }
+    }
+    </script>
+
+</head>
+
+<body class="livereports">
+
+  <!-- Begin page content -->
+  <div class="container">
+      <form id="form1" action="/" method="post" onsubmit="return checkform(this);">
+    <div class="page-header">
+      <h1>Blued用户反馈信息收集平台</h1>
+      <input  name = 'search1' class="form-control" id="id" type="text" placeholder="请输入关键字"  style="margin-top: 30px" form="form1">
+    </div>
+
+    <button  class="btn btn-success" type="submit" value="提交" id="search" form="form1" >搜索</button>
+
+     <div class="alert alert-danger notice-error" role="alert">请检验是否输入信息！</div>
+          <div> <p class="text-muted" style="align-content: center ; text-align:center;color: red;font-size: 20px">您输入的内容无法识别！</p></div>
+
+  <table id="data" class="table table-hover table-bordered">
+      <thead>
+    </thead>
+
+      <tbody></tbody>
+    </table>
+          </form>
+    <div id="findthem" class="findthem bg-warning"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted" style="align-content: center">信Blued，无bug —— By Blued QA Team.</p>
+    </div>
+  </footer>
+
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+  <script src="https://os4ty6tab.qnssl.com/web/static/msg/polyfill-6e7fe53f.js"></script>
+  <script src="https://dn-web-blued-cn.qbox.me/web/static/iliveorders/moment-2b45b150.js"></script>
+  <script src="https://os4ty6tab.qnssl.com/web/static/cblued/bootstrap-datepicker.min-703011b8.js"></script>
+  <script src="https://os4ty6tab.qnssl.com/web/static/cblued/bootstrap-datepicker.zh-CN.min-94c9b971.js"></script>
+  <script src="https://os4ty6tab.qnssl.com/web/static/cblued/livereports-8f87d075.js"></script>
+</body>
+
+</html>

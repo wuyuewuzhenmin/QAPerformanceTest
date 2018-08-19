@@ -1,0 +1,16 @@
+.login_view{
+    background-color: #FBF9FE;
+    font-size: 32px;
+    overflow: hidden;
+}
+.login_section{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 20px 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #fff;
+}
+.btn{
+    padding: 0 30px;
+}
