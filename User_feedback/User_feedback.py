@@ -6,6 +6,7 @@ import MySQLdb
 # from mysql.mysql_select import mysql
 
 app = Flask(__name__)
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 
 @app.route('/',methods=['GET', 'POST'])
@@ -65,4 +66,4 @@ def index():
     return render_template('html.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, port=8012, host='0.0.0.0')
